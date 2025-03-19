@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  symfony-basic-setup:
+    container_name: "symfony-basic-setup"
+    build: 
+      context: ./docker
+      dockerfile: symfony.dockerfile
+    volumes:
+         - "./app/:/var/www/html/"
+    ports:
+      - "8001:8001"
