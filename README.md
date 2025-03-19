@@ -41,8 +41,9 @@ This repository provides the simplest and most efficient Docker setup for runnin
     mkdir app
     ```
 
-3.  **Place your Symfony project inside the app directory:**
-    You must place your existing Symfony project inside the newly created app directory.
+3.  **Place your Symfony project inside the app directory or Leave the app directory empty:**
+    You can leave the app directory empty or place your existing Symfony project inside the newly created app directory.
+    In case you left the app directory empty, make sure to restart the container or symfony server after installing a new Symfony project. The Symfony CLI tool will not restart the server for you.
 
 4.  **Build and run the Docker container:**
 
