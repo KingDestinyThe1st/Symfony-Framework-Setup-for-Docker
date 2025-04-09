@@ -3,7 +3,7 @@
 # Function to start the Symfony CLI server
 start_symfony() {
   echo "Starting Symfony CLI server..."
-  symfony server:start --port=8001 --allow-all-ip
+  symfony server:start --port=8000 --allow-all-ip
 }
 
 # Function to stop the Symfony CLI server

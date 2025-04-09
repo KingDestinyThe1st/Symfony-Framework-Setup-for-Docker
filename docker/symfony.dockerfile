@@ -38,6 +38,6 @@ RUN chmod +x /docker/entrypoint.sh
 
 WORKDIR /var/www/html/
 
-EXPOSE 8001
+EXPOSE 8000
 
 CMD ["/docker/entrypoint.sh"]

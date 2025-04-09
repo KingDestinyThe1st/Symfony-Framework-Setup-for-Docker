@@ -9,4 +9,4 @@ services:
     volumes:
          - "./app/:/var/www/html/"
     ports:
-      - "8001:8001"
+      - "8000:8000"
