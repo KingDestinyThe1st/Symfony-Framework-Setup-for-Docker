@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:25.04
 
 # Set timezone
 ENV TZ=$TIMEZONE
@@ -32,13 +32,13 @@ RUN wget -qO- https://get.symfony.com/cli/installer | bash && mv /root/.symfony5
 
 RUN rm -rf /var/www/html/{*,.*}
 
-COPY entrypoint.sh /entrypoint.sh
-COPY .env /
+COPY entrypoint.sh /docker/entrypoint.sh
+COPY .env /docker/.env
 
-RUN chmod +x entrypoint.sh
+RUN chmod +x /docker/entrypoint.sh
 
 WORKDIR /var/www/html/
 
 EXPOSE $PORT
 
-CMD ["/entrypoint.sh"]
+CMD ["/docker/entrypoint.sh"]
