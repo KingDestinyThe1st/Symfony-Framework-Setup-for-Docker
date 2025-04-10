@@ -2,11 +2,15 @@ version: "3"
 
 services:
   symfony-basic-setup:
-    container_name: "symfony-basic-setup"
+    container_name: "symfony-basic-latest"
+    env_file:
+      - .env
     build: 
       context: ./docker
       dockerfile: symfony.dockerfile
+    environment:
+       - PORT=${PORT}
     volumes:
          - "./app/:/var/www/html/"
     ports:
-      - "8000:8000"
+        - "${PORT}:${PORT}"
