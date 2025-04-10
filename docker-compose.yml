@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  symfony-basic-setup:
+  symfony-basic-latest:
     container_name: "symfony-basic-latest"
     env_file:
       - .env
@@ -10,6 +10,7 @@ services:
       dockerfile: symfony.dockerfile
     environment:
        - PORT=${PORT}
+       - TIMEZONE=${TIMEZONE}
     volumes:
          - "./app/:/var/www/html/"
     ports:
