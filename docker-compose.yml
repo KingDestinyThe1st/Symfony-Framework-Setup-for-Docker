@@ -6,7 +6,7 @@ services:
     env_file:
       - .env
     build: 
-      context: ./docker
+      context: .
       dockerfile: symfony.dockerfile
     environment:
        - PORT=${PORT}
