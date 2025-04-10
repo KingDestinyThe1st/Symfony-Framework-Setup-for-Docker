@@ -38,6 +38,6 @@ RUN chmod +x /docker/entrypoint.sh
 
 WORKDIR /var/www/html/
 
-EXPOSE 8000
+EXPOSE $PORT
 
 CMD ["/docker/entrypoint.sh"]
