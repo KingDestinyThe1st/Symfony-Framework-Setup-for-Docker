@@ -11,6 +11,7 @@ services:
     environment:
        - PORT=${PORT}
        - TIMEZONE=${TIMEZONE}
+       - PHP_VERSION=${PHP_VERSION}
     volumes:
          - "./app/:/var/www/html/"
     ports:
