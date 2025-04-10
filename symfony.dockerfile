@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 # Set timezone
-ENV TZ=Africa/Lagos 
+ENV TZ=$TIMEZONE
 
 # Avoid interactive prompts
 ENV DEBIAN_FRONTEND=noninteractive
@@ -32,12 +32,13 @@ RUN wget -qO- https://get.symfony.com/cli/installer | bash && mv /root/.symfony5
 
 RUN rm -rf /var/www/html/{*,.*}
 
-COPY entrypoint.sh /docker/entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
+COPY .env /
 
-RUN chmod +x /docker/entrypoint.sh
+RUN chmod +x entrypoint.sh
 
 WORKDIR /var/www/html/
 
 EXPOSE $PORT
 
-CMD ["/docker/entrypoint.sh"]
+CMD ["/entrypoint.sh"]
