@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Starting Symfony CLI server..."
-
-
 source .env
 
 # Function to start the Symfony CLI server
