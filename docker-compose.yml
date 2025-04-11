@@ -8,10 +8,18 @@ services:
     build: 
       context: .
       dockerfile: symfony.dockerfile
+      args:
+        PHP_VERSION: ${PHP_VERSION}
+        NODE_VERSION: ${NODE_VERSION}
+        NVM_VERSION: ${NVM_VERSION}
+        TIMEZONE: ${TIMEZONE}
+        PORT: ${PORT}
     environment:
        - PORT=${PORT}
        - TIMEZONE=${TIMEZONE}
        - PHP_VERSION=${PHP_VERSION}
+       - NODE_VERSION=${NODE_VERSION}
+       - NVM_VERSION=${NVM_VERSION}
     volumes:
          - "./app/:/var/www/html/"
     ports:
