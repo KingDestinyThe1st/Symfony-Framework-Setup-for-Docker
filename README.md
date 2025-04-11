@@ -8,16 +8,17 @@ This repository provides the simplest and most efficient Docker setup for runnin
 
 ## Features
 
-* **Ubuntu 20.04 base image:** Provides a stable and reliable environment.
-* **PHP 8.2:** Uses the latest stable PHP version for optimal performance and features.
-* **Node.js 18.18.2 and npm:** Includes Node.js and npm for frontend development.
+* **.env file:** Comes with a .env file to allow you customize the setup to your requirement.
+* **Latest Ubuntu Version 25.04 base image:** Provides a stable and reliable environment.
+* **PHP 8.4:** Uses the latest stable PHP version for optimal performance and features.
+* **Node.js 23.11.0, NVM 0.39.7  and npm:** Includes Node.js, NVM and NPM for frontend development.
 * **Composer:** Installs Composer for dependency management.
 * **Symfony CLI:** Installs the Symfony CLI for development tools.
 * **Graceful shutdown:** The `entrypoint.sh` script ensures the Symfony server stops cleanly when the container is stopped.
-* **Port 8001:** The Symfony server runs on port 8001, making it easy to access.
+* **Port 8000:** The Symfony server runs on port 8000, making it easy to access.
 * **Volume mapping:** Maps your local `app/` directory to `/var/www/html/` in the container, allowing for seamless code changes.
 * **Docker Compose:** Simplifies the process of building and running the container.
-* **Timezone Set:** Sets the timezone to Africa/Lagos.
+* **Timezone Set:** Sets the timezone to where ever you want. The default timezone is set to Africa/Lagos in the .env file
 
 ## Prerequisites
 
@@ -55,7 +56,7 @@ This repository provides the simplest and most efficient Docker setup for runnin
 
 5.  **Access your Symfony application:**
 
-    Open your web browser and navigate to `http://localhost:8001`.
+    Open your web browser and navigate to `http://localhost:8000`.
 
 6.  **Stop the container:**
 
