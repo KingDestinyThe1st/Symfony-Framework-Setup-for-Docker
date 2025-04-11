@@ -55,7 +55,6 @@ RUN dos2unix /docker/.env
 RUN chmod +x /docker/entrypoint.sh
 RUN chmod +x /docker/.env
 
-
 WORKDIR /var/www/html/
 
 EXPOSE $PORT
