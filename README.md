@@ -1,6 +1,8 @@
-# Symfony Basic Docker Setup
+# Symfony Basic Docker Setup with Symfony CLI tool
 
-This repository provides the simplest and most efficient Docker setup for running Symfony applications. It includes a Dockerfile for building the container and a Docker Compose file for easy management.
+This repository provides the simplest and most efficient Docker setup for running Symfony application in dev environment. It includes a Dockerfile for building the container, a Docker Compose file for easy management, and a shell script to start and stop the Symfony server.
+
+* **dev:** This setup is for development purpose only. For production environment, use Apache or any other recommended server to run your Symfony application.
 
 ## YOU WILL NOT FIND ANY DOCKER SETUP FOR PHP SYMFONY FRAMEWORK AS SIMPLE AND EASY TO USE AS THIS 
 **Author:** Destiny Diekedie
