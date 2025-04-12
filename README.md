@@ -4,7 +4,7 @@ This repository provides the simplest and most efficient Docker setup for runnin
 
 ## YOU WILL NOT FIND ANY DOCKER SETUP FOR PHP SYMFONY FRAMEWORK AS SIMPLE AND EASY TO USE AS THIS 
 **Author:** Destiny Diekedie
-**Contact:** [Upwork](https://www.upwork.com/freelancers/~01fe13ad4d04129ce1) [LinkedIn](https://www.linkedin.com/in/destiny-diekedie/)
+**Contact:** [LinkedIn](https://www.linkedin.com/in/destiny-diekedie/)
 
 ## Features
 
